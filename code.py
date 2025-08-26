@@ -12,7 +12,9 @@ data = {
 df = pd.DataFrame(data)
 
 # adding a new row
-new_row={'Name':'john','Age':33,'city':'LA'}
+new_row={'Name':'john','Age':33,'City':'LA'}
+df.loc[len(df.index)]=new_row
+new_row={'Name':'karl','Age':43,'City':'tokyo'}
 df.loc[len(df.index)]=new_row
 
 # 3. Create 'data' folder if it doesn't exist
